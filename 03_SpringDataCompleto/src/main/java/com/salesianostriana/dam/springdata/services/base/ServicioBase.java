@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.springdata.servicios.base;
+package com.salesianostriana.dam.springdata.services.base;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

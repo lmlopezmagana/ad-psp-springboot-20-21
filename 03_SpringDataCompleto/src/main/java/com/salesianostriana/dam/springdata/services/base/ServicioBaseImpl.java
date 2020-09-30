@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.springdata.servicios.base;
+package com.salesianostriana.dam.springdata.services.base;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public abstract class ServicioBaseImpl<T, ID, R extends JpaRepository<T, ID>>
-        implements ServicioBase<T, ID, R> {
+        implements ServicioBase<T, ID, R>{
 
     @Autowired
     R repositorio;
@@ -41,4 +41,6 @@ public abstract class ServicioBaseImpl<T, ID, R extends JpaRepository<T, ID>>
     public void deleteById(ID id) {
         repositorio.deleteById(id);
     }
+
 }
+
