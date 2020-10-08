@@ -15,7 +15,7 @@
         </tr>
         <tr th:each="producto : ${lista}">
             <td th:text="${producto.nombre}">Onions</td>
-            <td th:text="${producto.precio}">2.41</td>
+            <td th:text="${#numbers.formatCurrency(producto.precio)}">2.41</td>
             <td th:text="${producto.unidadesEnStock}">2</td>
         </tr>
     </table>
