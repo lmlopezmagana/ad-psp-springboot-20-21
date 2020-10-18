@@ -10,7 +10,7 @@ public abstract class ServicioBaseImpl<T, ID, R extends JpaRepository<T, ID>>
         implements ServicioBase<T, ID, R>{
 
     @Autowired
-    R repositorio;
+    protected R repositorio;
 
     @Override
     public T save(T t) {
